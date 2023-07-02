@@ -144,7 +144,7 @@
     - M1037
 
 - name: Deny loopback network traffic
-  become: true
+  become: false
   community.general.ufw:
     rule: deny
     src: '{{ item }}'
